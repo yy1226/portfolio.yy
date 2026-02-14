@@ -58,6 +58,15 @@ section ol li {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  background-image: url('images/pb_main.png'); /* デスクトップ用 */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('images/pb_main_sp.png'); /* スマホ用 */
+  }
 }
 
 .hero img {
