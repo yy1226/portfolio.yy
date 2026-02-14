@@ -20,7 +20,6 @@ p {
   font-size: 15px;
 }
 
-/* 共通コンテナ中央寄せ */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -28,11 +27,10 @@ p {
 
 /* ======================================
    共通セクションタイトルと本文
-   H2 と P の余白統一
 ====================================== */
 section h2 {
   font-size: 28px;
-  margin-bottom: 30px; /* 全セクション共通 */
+  margin-bottom: 30px; 
   letter-spacing: 0.08em;
   color: #1c1c1c;
 }
@@ -40,7 +38,7 @@ section h2 {
 section p,
 section ul,
 section ol {
-  margin-bottom: 60px; /* 次要素との余白統一 */
+  margin-bottom: 60px; 
 }
 
 section ul li,
@@ -48,7 +46,7 @@ section ol li {
   margin-bottom: 12px;
 }
 
-/* CONTACT テキストだけボタンとの余白を短め */
+/* CONTACT  */
 .contact-text {
   margin-bottom: 50px;
 }
@@ -88,8 +86,8 @@ section ol li {
 }
 
 .hero-overlay p.hero-sub {
-  color: white;       /* 白色に統一 */
-  font-size: 18px;    /* 必要ならサイズも明示 */
+  color: white;       
+  font-size: 18px;    
   letter-spacing: 0.2em;
 }
 
@@ -238,8 +236,8 @@ section ol li {
 }
 
 .work img {
-  width: 100%;             /* 横幅100%で親にフィット */
-  height: 500px;           /* デスクトップ用の高さ */
+  width: 100%;             
+  height: 500px;           
   object-fit: cover;
   transition: 0.6s ease;
 }
@@ -252,15 +250,15 @@ section ol li {
 .work-info {
   position: absolute;
   bottom: 20px;
-  left: 5%;                /* 左右を % にして可変幅 */
+  left: 5%;                
   right: 5%;
   color: white;
   background: rgba(28, 28, 28, 0.45);
   padding: 10px 15px;
   backdrop-filter: blur(4px);
   box-sizing: border-box;
-  max-height: 100px;       /* 高さ制限 */
-  overflow: hidden;        /* はみ出す場合は非表示 */
+  max-height: 100px;       
+  overflow: hidden;        
 }
 
 .work-info h3 {
@@ -282,7 +280,7 @@ section ol li {
 ====================== */
 @media (max-width: 1024px) {
   .work img {
-    height: 400px;          /* タブレット用 */
+    height: 400px;          
   }
   .work-info {
     max-height: 90px;
@@ -298,18 +296,18 @@ section ol li {
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* スマホは1列 */
+    grid-template-columns: 1fr; 
     gap: 30px;
   }
 
   .work img {
-    height: auto;            /* 高さ自動で比率維持 */
+    height: auto;           
   }
 
   .work-info {
     left: 5%;
     right: 5%;
-    max-height: 80px;        /* スマホでは少し小さめ */
+    max-height: 80px;        
     padding: 8px 12px;
   }
 
@@ -334,13 +332,13 @@ section ol li {
 
 .process h2 {
   font-size: 28px;
-  margin-bottom: 60px; /* 他セクションと統一可能 */
+  margin-bottom: 60px; 
 }
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* そのまま */
-  gap: 60px; /* そのまま */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 60px; 
 }
 
 .process-item span {
@@ -559,7 +557,7 @@ section ol li {
   }
 
   .process-grid {
-    grid-template-columns: 1fr; /* スマホ対応のみ */
+    grid-template-columns: 1fr; 
     gap: 40px;
   }
 }
